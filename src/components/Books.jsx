@@ -41,7 +41,7 @@ function Books() {
         SearchHandler={SearchHandler}
       />
       <div className={styles.container}>
-        <div className={styles.cards}>
+        <div className={styles.cards}> 
           {books.map((book) => (
             <CardBook
               data={book}
@@ -51,7 +51,9 @@ function Books() {
           ))}
         </div>
 
-        {!!favorites.length && (
+    
+      </div>
+          {!!favorites.length && (
           <div className={styles.favorite}>
             <h4>Favorite</h4>
             {favorites.map((favorite) => (
@@ -60,7 +62,6 @@ function Books() {
           
           </div>
         )}
-      </div>
     </>
   );
 }
